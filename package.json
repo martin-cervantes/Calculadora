@@ -1,0 +1,30 @@
+{
+  "name": "Calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcervantes71/Calculadora.git"
+  },
+  "author": "Martin Cervantes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcervantes71/Calculadora/issues"
+  },
+  "homepage": "https://github.com/mcervantes71/Calculadora#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.6",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0"
+  }
+}
