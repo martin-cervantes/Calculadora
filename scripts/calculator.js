@@ -12,7 +12,7 @@ const reset = () => {
   ops = [];
 };
 
-const action = (symbol) => {
+export const action = (symbol) => {
   if (nums.includes(symbol) && last !== ')') {
     screenText += symbol;
   } else if (ops1.includes(symbol) && last !== '.' && last !== '+' && last !== '-') {
@@ -86,7 +86,7 @@ const doPrecedence = (arr) => {
   return arr[0];
 };
 
-const calculate = () => {
+export const calculate = () => {
   const text = screenText.split('');
   last = 'CE';
 
@@ -114,7 +114,7 @@ const calculate = () => {
   document.getElementById('screen').innerText = screenText;
 };
 
-const clearScreen = () => {
+export const clearScreen = () => {
   reset();
   document.getElementById('screen').innerText = screenText;
 };

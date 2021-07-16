@@ -1,3 +1,5 @@
+import { action, calculate, clearScreen } from './calculator.js';
+
 document.addEventListener('keypress', ({ key }) => {
   if (key === '*') {
     action('x');
