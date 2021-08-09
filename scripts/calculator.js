@@ -15,7 +15,7 @@ const reset = () => {
 export const action = (symbol) => {
   if (nums.includes(symbol) && last !== ')') {
     screenText += symbol;
-  } else if (ops1.includes(symbol) && last !== '.' && last !== '+' && last !== '-') {
+  } else if (ops1.includes(symbol) && last !== '.' && last !== '-') {
     screenText += symbol;
   } else if (ops2.includes(symbol) && (nums.includes(last) || last === ')')) {
     screenText += symbol;
