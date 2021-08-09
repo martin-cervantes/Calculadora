@@ -3,6 +3,7 @@ let last = '';
 
 let ops = [];
 const nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+const op = ['+', '-', '/', 'x'];
 const ops1 = ['+', '-'];
 const ops2 = ['/', 'x'];
 
@@ -15,6 +16,8 @@ const reset = () => {
 export const action = (symbol) => {
   if (nums.includes(symbol) && last !== ')') {
     screenText += symbol;
+  } else if (op.includes(symbol) && op.includes(last)) {
+    screenText = screenText.slice(0, -1) + symbol;
   } else if (ops1.includes(symbol) && last !== '.' && last !== '-') {
     screenText += symbol;
   } else if (ops2.includes(symbol) && (nums.includes(last) || last === ')')) {
